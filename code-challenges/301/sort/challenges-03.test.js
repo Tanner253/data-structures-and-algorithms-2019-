@@ -7,8 +7,13 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
-  // Solution code here...
+    let array = arr;
+    array.sort(function (a, b) {
+  return a > b ? -1 : b > a ? 1 : 0;
+})
+return array
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -21,7 +26,9 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
-  // Solution code here...
+  let array = arr;
+   array.sort()
+   return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,7 +38,10 @@ Write a function named sortByLength that takes in an array of strings and return
 ------------------------------------------------------------------------------------------------ */
 
 const sortByLength = (arr) => {
-  // Solution code here...
+    let array = arr;
+    array.sort((a,b)=> {return a.length - b.length});
+    return array;
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,7 +53,13 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-  // Solution code here...
+   let array = arr;
+   array.sort((a, b) => {
+  a = a.toLowerCase();
+  b = b.toLowerCase();
+  return a > b ? 1 : b > a ? -1 : 0;
+})
+   return array
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,7 +76,15 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-  // Solution code here...
+  let array = arr;
+  arr.sort((a,b) => {
+  if (a.price < b.price)
+    return -1;
+  if (a.price > b.price)
+    return 1;
+  return 0;
+})
+return array
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -72,9 +96,16 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbersByLength = (arr) => {
-  // Solution code here...
-};
-
+    let array = arr;
+    array.sort((a,b)=> {
+      let num = array;
+       num = a - b;
+       num.sort((a,b) =>{
+         array = num;
+       });
+       return array
+    })
+}
 /*-----------------------------------------------------------------------------------------------
 CHALLENGE 7
 
