@@ -31,7 +31,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
-  return arr.slice('')
+  return arr.split('')
 };
 
 
@@ -78,8 +78,8 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  recipe.ingredient.forEach((ingredient) => {
-    let withoutAmount = ingredient.slice(ingredient.indexOf(' ' + 1))
+  recipe.ingredients.forEach((ingredient) => {
+    let withoutAmount = ingredient.slice(ingredients.indexOf(' ' + 1))
     let withoutsteps = steps.slice(steps.indexOf(' ' + 1))
   })
   return result;
