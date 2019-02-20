@@ -100,8 +100,10 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  if (character === arr.character){
-    return true
+  for(let i in arr){
+    if (character === arr.name){
+      return Object.name[i].length > 0 ? true : false
+    }
   }
 }
 
