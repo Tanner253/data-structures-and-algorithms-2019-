@@ -97,15 +97,14 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 
 const sortNumbersByLength = (arr) => {
     let array = arr;
-    array.sort((a,b)=> {
-      let num = array;
-       num = a - b;
-       num.sort((a,b) =>{
-         array = num;
-       });
+    array.sort( function (a, b ) {
+        a = a.toString()
+        b = b.toString()
+        return a.length > b.length ? 1 : a.length < b.length ? -1 : 0 ;
+       })
        return array
-    })
-}
+    }
+
 /*-----------------------------------------------------------------------------------------------
 CHALLENGE 7
 
@@ -125,7 +124,9 @@ const people = [
 ];
 
 const sortPeople = (arr) => {
-  // Solution code here...
+  let array = []
+  array.push(arr.lastName.toLowerCase())
+  return array.sort()
 };
 
 /* ------------------------------------------------------------------------------------------------
