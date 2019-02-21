@@ -45,11 +45,8 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-    let duplicates = []
-    arr.push(duplicates)
-    
-    const findDuplicates = duplicates.push(duplicates.filter(val => !arr.includes(val))); 
-  return findDuplicates
+    return arr.filter(val => !forbiddenValues.includes(val)); 
+
 };
 
 /* ------------------------------------------------------------------------------------------------
