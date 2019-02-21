@@ -32,9 +32,7 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-    var newAns = []
-    newAns.push(arr.filter(value => /[aeiou]/.test(value)));
-    return newAns
+    return arr.filter(value => value.match(/[aeiou]/));
 };
 
 
@@ -47,11 +45,8 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-    let duplicates = []
-    arr.push(duplicates)
-    
-    const findDuplicates = duplicates.push(duplicates.filter(val => !arr.includes(val))); 
-  return findDuplicates
+    return arr.filter(val => !forbiddenValues.includes(val)); 
+
 };
 
 /* ------------------------------------------------------------------------------------------------
