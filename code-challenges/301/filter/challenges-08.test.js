@@ -33,7 +33,7 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 const filterStringsWithVowels = (arr) => {
     var newAns = []
-    newAns.push(arr.filter(value => /[aeiou]/.test(value)));
+    newAns.push(arr.filter(value => /[aeiou]/.test(arr)));
     return newAns
 };
 
