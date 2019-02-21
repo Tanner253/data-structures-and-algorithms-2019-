@@ -9,7 +9,15 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-  // Solution code here...
+    var oddAns = []
+   arr.forEach((value) => {
+       if(value % 2 === 0){
+
+       }else if (value % 2 === 1){
+           oddAns.push(value);
+       }
+   })
+   return oddAns
 };
 
 /* ------------------------------------------------------------------------------------------------
