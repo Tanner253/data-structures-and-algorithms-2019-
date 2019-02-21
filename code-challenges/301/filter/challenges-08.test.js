@@ -32,7 +32,11 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  // Solution code here...
+    var newAns = []
+  arr.forEach((value) => {
+      newAns.push(arr.filter(value => /^[aeiou]/i.test(value)));
+  })
+  return newAns
 };
 
 
