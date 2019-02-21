@@ -31,7 +31,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
-  return arr.slice('')
+  return arr.split('')
 };
 
 
@@ -78,8 +78,8 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  recipe.ingredient.forEach((ingredient) => {
-    let withoutAmount = ingredient.slice(ingredient.indexOf(' ' + 1))
+  recipe.ingredients.forEach((ingredient) => {
+    let withoutAmount = ingredient.slice(ingredients.indexOf(' ' + 1))
     let withoutsteps = steps.slice(steps.indexOf(' ' + 1))
   })
   return result;
@@ -95,7 +95,7 @@ You may also use other string or array methods.
 
 const splitFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+
   return result;
 }
 
@@ -129,7 +129,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-  // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -157,23 +157,12 @@ CHALLENGE 8 - Stretch Goal
 
 Write a function named totalSumCSV that, given a string of comma-separated values (CSV) as input. (e.g. "1,2,3"), returns the total sum of the numeric values (e.g. 6).
 ------------------------------------------------------------------------------------------------ */
-
 const totalSumCSV = (str) => {
   let total = 0;
-  // Solution code here...
+
   return total;
 };
-
-
-/* ------------------------------------------------------------------------------------------------
-CHALLENGE 9 - Stretch Goal
-
-Write a function named removeVowels that takes in a string and returns a new string where all the vowels of the original string have been removed.
-
-For example, removeVowels('gregor') returns 'grgr'.
------------------------------------------------------------------------------------------------- */
-
-const removeVowels = (str) => {
+mmmmmmmm = (str) => {
   // Solution code here...
 };
 
