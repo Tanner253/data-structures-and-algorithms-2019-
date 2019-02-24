@@ -9,7 +9,14 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  arr.reduce()
+  let howMany = arr.filter((acc, val, idx) => {
+    if (val) {
+      let number = acc++  
+      return number
+    }
+    
+  })
+  return howMany
 };
 
 /* ------------------------------------------------------------------------------------------------
