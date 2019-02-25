@@ -12,6 +12,7 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
+  //neeed help
   let sum = 0;
   input.reduce(() => {
     if(input === target){
@@ -39,11 +40,10 @@ const totalSum = (input) => {
             sum += totalSum(input[i]);
         }else {
             sum += input[i];
-           
         }
         
     }
-     return sum;
+    return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
