@@ -24,10 +24,12 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   const array = []
-  for (var i = 1 ; i <= stores.length ; i++){
-      for (var j = 1 ; j = i ; j++){
-          array.push()
+  for (var i = 0 ; i < stores[0].length ; i++){
+      let ans  = 0;
+      for (var j = 0 ; j = i ; j++){
+        ans += stores[i][j]
       }
+      array.push(ans)
   }
   }
 
