@@ -97,8 +97,13 @@ Write a function named findEvery that takes in an array of strings, along with a
 ------------------------------------------------------------------------------------------------ */
 
 const findEvery = (arr, target) => {
-  // Solution code here...
-};
+
+  return arr.forEach((value) => {
+    if(value.substring(target)){
+      return true
+      }
+  })
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8
