@@ -8,13 +8,9 @@ Write a function named toTitleCase that takes in an array of strings and returns
 For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyver'].
 ------------------------------------------------------------------------------------------------ */
 
-const toTitleCase = (arr) => {
-  let array = []
-  arr.forEach((value) => {
-      array.push(value.charAt(0).toUpperCase())
-  })
-  return array
-};
+
+const toTitleCase = (arr) => arr.map(element => element.charAt(0).toUpperCase() + element.substring(1));
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -87,9 +83,8 @@ let starWarsData = [{
   gender: 'n/a'
 }]
 
-let biggerThanLuke = (arr) => {
-  // Solution code here...
-}
+
+let biggerThanLuke = (arr) => arr.filter(element=>parseInt(element.mass)>parseInt(arr[0].mass)).map(element=>element.name).join(' - ');}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -105,9 +100,8 @@ Here is an example of the input:
 This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
-const sortBy = (property, arr) => {
-  // Solution code here...
-}; 
+  const sortBy = (property, arr) => arr.sort((a,b)=>a[property]>b[property]?1:-1);
+ 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
