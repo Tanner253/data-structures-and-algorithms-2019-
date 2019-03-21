@@ -37,28 +37,24 @@ namespace BinarySearch
 
            
             int start = 0;
-            int end = array.Length ;
+            int end = array.Length -1 ;
             do
             {
-
                 int index = (start + end) / 2;
                 if (array[index] == num)
                 {
                     return index;
-
                 }
                 else if (array[index] > num)
                 {
-                    end = index - 1;
-
+                    end = index ;
                 }
                 else if (array[index] < num)
                 {
-                    start = index + 1;
+                    start = index ;
                 }
-
             }
-            while (start <= end);
+            while (start < end);
             return -1;
             
         }
