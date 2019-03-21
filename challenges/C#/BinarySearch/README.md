@@ -1,6 +1,6 @@
 # Binary Search
-<!-- Short summary or background information -->
-
+" binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array."
+<-- https://en.wikipedia.org/wiki/Binary_search_algorithm -->
 ## Challenge
 this challenge was to do a binary sort and return a value based on the users input.
 

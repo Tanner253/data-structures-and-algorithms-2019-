@@ -14,7 +14,10 @@ namespace BinarySearch
             
             Console.WriteLine(BinarySearchValid(array, num));
         }
-
+        /// <summary>
+        /// retrieves users input
+        /// </summary>
+        /// <returns>int input</returns>
         public static int Selection()
         {
             Console.WriteLine("choose a number");
