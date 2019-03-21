@@ -14,7 +14,10 @@ namespace BinarySearch
             
             Console.WriteLine(BinarySearchValid(array, num));
         }
-
+        /// <summary>
+        /// retrieves users input
+        /// </summary>
+        /// <returns>int input</returns>
         public static int Selection()
         {
             Console.WriteLine("choose a number");
@@ -29,10 +32,10 @@ namespace BinarySearch
         /// <param name="array">array of intigers the logic is run against</param>
         /// <returns>an index value or -1 for doesn't exist</returns>
         
-        public static int BinarySearchValid(int[] array , int num)
+        public static int BinarySearchValid(int[] array, int num)
         {
 
-            
+           
             int start = 0;
             int end = array.Length ;
             do
