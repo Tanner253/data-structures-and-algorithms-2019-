@@ -16,7 +16,9 @@ namespace linked_list
             myList1.AddFirst(5);
             myList1.AddFirst(22);
             myList1.PrintAllNode();
-
+            string ans = Console.ReadLine();
+            int ansInt = Convert.ToInt32(ans);
+            Console.WriteLine(myList1.Contains(ansInt));
             Console.WriteLine();
 
             Console.ReadLine();
