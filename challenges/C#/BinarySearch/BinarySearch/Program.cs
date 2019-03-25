@@ -47,12 +47,13 @@ namespace BinarySearch
                 }
                 else if (array[index] > num)
                 {
-                    end = index ;
+                    end = index;
                 }
-                else if (array[index] < num)
+                else
                 {
                     start = index ;
                 }
+              
             }
             while (start < end);
             return -1;
