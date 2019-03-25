@@ -9,19 +9,25 @@ namespace linked_list
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Add First:");
-            LinkedList myList1 = new LinkedList();
+            try
+            {
+                Console.WriteLine("Add First:");
+                LinkedList myList1 = new LinkedList();
 
-            myList1.AddFirst(1);
-            myList1.AddFirst(5);
-            myList1.AddFirst(22);
-            myList1.PrintAllNode();
-            string ans = Console.ReadLine();
-            int ansInt = Convert.ToInt32(ans);
-            Console.WriteLine(myList1.Contains(ansInt));
-            Console.WriteLine();
+                myList1.AddFirst(1);
+                myList1.AddFirst(5);
+                myList1.AddFirst(22);
+                myList1.PrintAllNode();
+                string ans = Console.ReadLine();
+                int ansInt = Convert.ToInt32(ans);
+                Console.WriteLine(myList1.Contains(ansInt));
+                Console.WriteLine();
 
-            Console.ReadLine();
+                Console.ReadLine();
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
         }
       

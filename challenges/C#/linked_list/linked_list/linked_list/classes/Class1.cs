@@ -11,40 +11,64 @@ namespace linked_list.classes
 
         public void AddFirst(int data)
         {
-            Node toAdd = new Node();
+            try
+            {
+                Node toAdd = new Node();
 
-            toAdd.Value = data;
-            toAdd.Next = Head;
+                toAdd.Value = data;
+                toAdd.Next = Head;
 
-            Head = toAdd;
+                Head = toAdd;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
-        
+
         public void PrintAllNode()
         {
-
-            Node current = Head;
-            while (current != null)
+            try
             {
-                Console.WriteLine(current.Value);
-                current = current.Next;
+
+                Node current = Head;
+                while (current != null)
+                {
+                    Console.WriteLine(current.Value);
+                    current = current.Next;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
         public bool Contains(int value)
         {
-            Node current = Head;
-
-            while (current.Next != null)
+            try
             {
-                if (value == current.Value)
+                Node current = Head;
+
+                while (current.Next != null)
                 {
-                    return true;
+                    if (value == current.Value)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
-                else
-                {
-                    return false;
-                }
+                return false;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
             return false;
+
         }
     }
 }
+
