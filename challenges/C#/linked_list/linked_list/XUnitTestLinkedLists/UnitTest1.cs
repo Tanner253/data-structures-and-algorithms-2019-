@@ -19,5 +19,10 @@ namespace XUnitTestLinkedLists
         {
             
         }
+        [Fact]
+        public void CanAddNodeBeforeValue()
+        {
+            
+        }
     }
 }
