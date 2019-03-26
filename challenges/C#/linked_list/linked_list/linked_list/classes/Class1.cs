@@ -82,7 +82,7 @@ namespace linked_list.classes
           
             
         }
-        public void InsertBeforeValue(int insertBefore, int insert)
+        /*public void InsertBeforeValue(int insertBefore, int insert)
         {
             Node theNode = new Node();
             Node insertBeforeNode = new Node();
@@ -95,7 +95,7 @@ namespace linked_list.classes
             }
             Current.Next = theNode;
             theNode.Next = insertBeforeNode;
-        }
+        }*/
 
 
         public void InsertAfterValue(int insertAfter, int insert)
@@ -110,13 +110,27 @@ namespace linked_list.classes
             {
                 Current = Current.Next;
             }
-            Current.Next = InsertAfterThisValue;
+            InsertValue = Current.Next;
             InsertAfterThisValue.Next = InsertValue;
-            
-
-
         }
-        
+
+        //refactored insert before
+        public void InsertBeforeValue(int insertBefore, int insert)
+        {
+            Node InsertValue = new Node();
+            InsertValue.Value = insert;
+
+            Node InsertBeforeThisValue = new Node();
+            InsertBeforeThisValue.Value = insertBefore;
+            Current = Head;
+            while (Current.Next.Value != insert)
+            {
+                Current = Current.Next;
+            }
+            InsertValue = Current.Next;
+            InsertValue = InsertBeforeThisValue;
+        }
+
     }
 }
 
