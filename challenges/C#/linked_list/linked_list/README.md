@@ -6,7 +6,8 @@ Implement a Singly Linked List Data Structure
 
 ## Approach & Efficiency
 the approach i took was splitting everything up to classes and knocking out one thing at a time
-
+O(1)
 ## API
 the methods used in this porgram are 
 LinkedList class -Print all() and Contains()
+Append () AppendBeforeValue() AppendAfterValue()

@@ -31,14 +31,20 @@ namespace linked_list
                 myList.PrintAllNode();
                 Console.WriteLine("--------------------------------------------------------------------");
                 Console.ReadLine();
-                Console.WriteLine("Choose one of the numbers in the list");
-                int answer2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter a number to add into the list");
-                int answer2PT2 = Convert.ToInt32(Console.ReadLine());
-                myList.InsertBeforeValue(answer2, answer2PT2);
+             
+             
+                Console.WriteLine("--------------------------------------------------------------------");
+                Console.WriteLine("Choose one of the numbers in the list - your number will come BEFORE the next value");
+                int answer3 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter a number to add into the list before your value!");
+                int answer4 = Convert.ToInt32(Console.ReadLine());
+                myList.InsertBeforeValue(answer3, answer4);
                 Console.WriteLine("--------------------------------------------------------------------");
                 myList.PrintAllNode();
-                Console.ReadLine();
+                Console.WriteLine("--------------------------------------------------------------------");
+                
+
+
             }
             catch(Exception e)
             {
