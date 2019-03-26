@@ -48,7 +48,7 @@ namespace linked_list.classes
         {
             try
             {
-                
+                Current = Head;
 
                 while (Current != null)
                 {
