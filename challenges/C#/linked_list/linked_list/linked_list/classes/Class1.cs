@@ -82,17 +82,40 @@ namespace linked_list.classes
           
             
         }
-        /*public void InsertBeforeValue(int insertBefore, int insert)
+        public void InsertBeforeValue(int insertBefore, int insert)
         {
             Node theNode = new Node();
+            Node insertBeforeNode = new Node();
+            insertBeforeNode.Value = insertBefore;
             theNode.Value = insert;
             Current = Head;
-            while (Current.Next != theNode)
+            while (Current.Next != insertBeforeNode)
             {
                 Current = Current.Next;
             }
-            Current.Next = 
-        }*/
+            Current.Next = theNode;
+            theNode.Next = insertBeforeNode;
+        }
+
+
+        public void InsertAfterValue(int insertAfter, int insert)
+        {
+            Node InsertValue = new Node();
+            InsertValue.Value = insert;
+
+            Node InsertAfterThisValue = new Node();
+            InsertAfterThisValue.Value = insertAfter;
+            Current = Head;
+            while(Current.Next != InsertAfterThisValue)
+            {
+                Current = Current.Next;
+            }
+            Current.Next = InsertAfterThisValue;
+            InsertAfterThisValue.Next = InsertValue;
+            
+
+
+        }
         
     }
 }

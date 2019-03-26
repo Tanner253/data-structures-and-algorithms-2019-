@@ -31,9 +31,19 @@ namespace linked_list
                 myList.PrintAllNode();
                 Console.WriteLine("--------------------------------------------------------------------");
                 Console.ReadLine();
-            }catch(Exception e)
+                Console.WriteLine("Choose one of the numbers in the list");
+                int answer2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter a number to add into the list");
+                int answer2PT2 = Convert.ToInt32(Console.ReadLine());
+                myList.InsertBeforeValue(answer2, answer2PT2);
+                Console.WriteLine("--------------------------------------------------------------------");
+                myList.PrintAllNode();
+                Console.ReadLine();
+            }
+            catch(Exception e)
             {
                 Console.WriteLine(e.Message);
+                Console.ReadKey();
             }
 
 
