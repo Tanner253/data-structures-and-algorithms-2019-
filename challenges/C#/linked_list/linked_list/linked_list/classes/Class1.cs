@@ -82,6 +82,17 @@ namespace linked_list.classes
           
             
         }
+        /*public void InsertBeforeValue(int insertBefore, int insert)
+        {
+            Node theNode = new Node();
+            theNode.Value = insert;
+            Current = Head;
+            while (Current.Next != theNode)
+            {
+                Current = Current.Next;
+            }
+            Current.Next = 
+        }*/
         
     }
 }
