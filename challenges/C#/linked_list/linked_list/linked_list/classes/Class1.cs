@@ -68,6 +68,21 @@ namespace linked_list.classes
             return false;
 
         }
+        public void Append(int value)
+        {
+            Node Append = new Node();
+            Append.Value = value;
+            Current = Head;
+            while(Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+            Current.Next = Append;
+            Append.Next = null;
+          
+            
+        }
+        
     }
 }
 

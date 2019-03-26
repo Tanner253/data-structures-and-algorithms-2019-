@@ -10,9 +10,5 @@ namespace linked_list.classes
 
         public Node Next { get; set; }
     }
-   /* public Node (int value)
-    {
-        Next = null;
-        Value = value;
-    }*/
+
 }
