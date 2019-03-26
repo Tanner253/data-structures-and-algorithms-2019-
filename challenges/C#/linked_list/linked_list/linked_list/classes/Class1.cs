@@ -7,6 +7,7 @@ namespace linked_list.classes
 {
     public class LinkedList
     {
+        public Node Current { get; set; }
         public Node Head { get; set; }
 
         public void AddFirst(int data)
@@ -47,18 +48,16 @@ namespace linked_list.classes
         {
             try
             {
-                Node current = Head;
+                
 
-                while (current.Next != null)
+                while (Current != null)
                 {
-                    if (value == current.Value)
+                    if (value == Current.Value)
                     {
                         return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
+                   
+                Current = Current.Next;
                 }
                 return false;
             }
