@@ -13,7 +13,7 @@ namespace linked_list.classes
         /// Inserts a value at begining of LL 
         /// </summary>
         /// <param name="data">The value store in the node</param>
-        public void InsertBefore(int data)
+        public void Insert(int data)
         {
             try
             {
@@ -32,22 +32,27 @@ namespace linked_list.classes
         /// <summary>
         /// Prints all the values of each node in the linked list
         /// </summary>
-        public void PrintAllNode()
+        public List<int> Print()
         {
+
+        
+        
+                List<int> list = new List<int>();
             try
             {
-
-                Node current = Head;
-                while (current != null)
+                Node Current = Head;
+                while (Current != null)
                 {
-                    Console.WriteLine(current.Value);
-                    current = current.Next;
+                    list.Add(Current.Value);
+                    Current = Current.Next;
                 }
+                return list;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            return list;
         }
         /// <summary>
         /// Check a linked list for a specific value and its presence

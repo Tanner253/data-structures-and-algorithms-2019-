@@ -14,10 +14,10 @@ namespace linked_list
                 Console.WriteLine("Add First:");
                 LinkedList myList = new LinkedList();
 
-                myList.InsertBefore(1);
-                myList.InsertBefore(5);
-                myList.InsertBefore(22);
-                myList.PrintAllNode();
+                myList.Insert(1);
+                myList.Insert(5);
+                myList.Insert(22);
+                myList.Print();
                 Console.WriteLine("Does this list contain the number: ");
                 string ans = Console.ReadLine();
                 int ansInt = Convert.ToInt32(ans);
@@ -28,7 +28,7 @@ namespace linked_list
                 myList.Append(answer);
                 Console.WriteLine("--------------------------------------------------------------------");
                 Console.WriteLine("This is your newly made list: ");
-                myList.PrintAllNode();
+                myList.Print();
                 Console.WriteLine("--------------------------------------------------------------------");
                 Console.ReadLine();
              
@@ -40,7 +40,7 @@ namespace linked_list
                 int answer4 = Convert.ToInt32(Console.ReadLine());
                 myList.InsertBeforeValue(answer3, answer4);
                 Console.WriteLine("--------------------------------------------------------------------");
-                myList.PrintAllNode();
+                myList.Print();
                 Console.WriteLine("--------------------------------------------------------------------");
                 Console.ReadKey();
                 

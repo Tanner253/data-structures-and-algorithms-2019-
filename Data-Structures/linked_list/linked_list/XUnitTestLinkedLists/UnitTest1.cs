@@ -1,28 +1,91 @@
 using System;
 using Xunit;
 using linked_list.classes;
-using linked_list;
+using  linked_list;
+using System.Collections.Generic;
 
 namespace XUnitTestLinkedLists
 {
     public class UnitTest1
     {
         [Fact]
-        //i cannot figure out how to test these methods!! will ask in lecture of after class -
+        
         public void CanMakeLinkedList()
         {
             LinkedList newVar = new LinkedList();
             Assert.NotNull(newVar);
         }
-        [Fact]
+
+       [Fact]
         public void CanInsertIntoLinkedList()
         {
+            LinkedList LL = new LinkedList();
+
+            int data = 55;
             
+            LL.Insert(data);
+
+            bool result = LL.Contains(data);
+
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void CanAddHeadNode()
+        {
+            LinkedList LL = new LinkedList();
+            int data = 5;
+
+            LL.Insert(data);
+
+            bool result = LL.Contains(data);
+
+            Assert.True(result);
+        }
+
+        [Fact] 
+        public void ReturnTrueIfLinkedListContainsValue()
+        {
+            LinkedList LL = new LinkedList();
+            int data = 5;
+            LL.Insert( data);
+
+            bool result = LL.Contains(data);
+            Assert.True(result);
+        }
+       // [Fact] how to make independant test  insert multiple values?
+        public void CanInsertMultipleNumbers()
+        {
+            LinkedList LL = new LinkedList();
+            int data = 5;
+            int data2 = 10;
+            LL.Insert(data);
+            LL.Insert(data2);
+
+
         }
         [Fact]
-        public void CanAddNodeBeforeValue()
+        public void ReturnFalseIfLinkedListDoesNotContainValue()
         {
-            
+            LinkedList LL = new LinkedList();
+            int data = 5;
+            LL.Insert(data);
+
+            bool result = LL.Contains(10);
+            Assert.False(result);
         }
+        [Fact]
+        public void CanReturnCollectionOfNodes()
+        {
+            LinkedList LL = new LinkedList();
+            int data = 5;
+            LL.Insert(data);
+            int data2 = 22;
+            LL.Insert(data2);
+            List<int> output = LL.Print();
+
+            Assert.Equal(5, output[1]);
+        }
+
     }
 }
