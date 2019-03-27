@@ -42,7 +42,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 
 ##### Insert Method
 The insert method Inserts a new node to the Head of the Linked list.
-![Insert](/assets/insert.JPG)
+![Insert](../assets/insert.JPG)
 ##### Includes Method
 
 This method reads a linked list and determines if a given value is present in the linked list
