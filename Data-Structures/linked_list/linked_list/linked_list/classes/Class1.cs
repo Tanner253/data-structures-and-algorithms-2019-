@@ -145,6 +145,23 @@ namespace linked_list.classes
             Current = Current.Next;
             Current.Next = InsertValue;
         }
+        public int GetKthFromEnd(int K)
+        {
+           
+            int counter = 0;
+            Current = Head;
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+                counter++;
+            }
+            Current = Head;
+            for(int i = 0; i < counter - K; i++)
+            {
+                Current = Current.Next;
+            }
+            return Current.Value;
+        }
 
     }
 }

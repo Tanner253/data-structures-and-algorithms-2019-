@@ -86,6 +86,16 @@ namespace XUnitTestLinkedLists
 
             Assert.Equal(5, output[1]);
         }
-
+        [Fact] 
+        public void CanGetKthFromTheEnd()
+        {
+            LinkedList LL = new LinkedList();
+            LL.Insert(1);
+            LL.Append(3);
+            LL.Append(4);
+            int K = 1;
+            int output = LL.GetKthFromEnd(K);
+            Assert.Equal(3, output);
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace linked_list
                 int ansInt = Convert.ToInt32(ans);
                 Console.WriteLine(myList.Contains(ansInt));
                 Console.ReadLine();
-                Console.Clear();
+                
                 Console.WriteLine("append an element");
                 int answer =   Convert.ToInt32(Console.ReadLine());
                 myList.Append(answer);
@@ -43,17 +43,24 @@ namespace linked_list
                 Console.ReadLine();
              
              
-                Console.WriteLine("--------------------------------------------------------------------");
-                Console.WriteLine("Choose one of the numbers in the list - your number will come BEFORE the next value");
+                
+                Console.WriteLine("Choose one of the numbers in the list - your number will come BEFORE this number");
                 int answer3 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter a number to add into the list before your value!");
+                Console.WriteLine("Enter a number to add into the list ");
                 int answer4 = Convert.ToInt32(Console.ReadLine());
                 myList.InsertBeforeValue(answer3, answer4);
                 Console.WriteLine("--------------------------------------------------------------------");
-                myList.Print();
-                Console.WriteLine("--------------------------------------------------------------------");
-                Console.ReadKey();
                 
+                foreach (var value in list)
+                {
+                    Console.Write($"{value}, ");
+                }
+                
+                Console.WriteLine("choose one of the numbers in the list");
+                int K = Convert.ToInt32(Console.ReadLine());
+                int output = myList.GetKthFromEnd(K);
+                Console.WriteLine(output);
+                Console.ReadKey();
 
 
             }
