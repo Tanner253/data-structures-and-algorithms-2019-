@@ -42,16 +42,16 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 
 ##### Insert Method
 The insert method Inserts a new node to the Head of the Linked list.
-![Image 1](https://via.placeholder.com/750x500)
+![Insert](/assets/insert.JPG)
 ##### Includes Method
 
 This method reads a linked list and determines if a given value is present in the linked list
 If the value is found True is returned, if not then False is returned.
-![Image 1](https://via.placeholder.com/750x500)
+![Includes](/assets/contains.JPG)
 ##### Print Method
 
 The print method will write all of the values of each node in the linked list to the console.*
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](/assets/print)
 
 ------------------------------
 
