@@ -9,8 +9,11 @@ namespace linked_list.classes
     {
         public Node Current { get; set; }
         public Node Head { get; set; }
-
-        public void AddFirst(int data)
+        /// <summary>
+        /// Inserts a value at begining of LL 
+        /// </summary>
+        /// <param name="data">The value store in the node</param>
+        public void Insert(int data)
         {
             try
             {
@@ -26,24 +29,36 @@ namespace linked_list.classes
                 Console.WriteLine(e.Message);
             }
         }
-
-        public void PrintAllNode()
+        /// <summary>
+        /// Prints all the values of each node in the linked list
+        /// </summary>
+        public List<int> Print()
         {
+
+        
+        
+                List<int> list = new List<int>();
             try
             {
-
-                Node current = Head;
-                while (current != null)
+                Node Current = Head;
+                while (Current != null)
                 {
-                    Console.WriteLine(current.Value);
-                    current = current.Next;
+                    list.Add(Current.Value);
+                    Current = Current.Next;
                 }
+                return list;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            return list;
         }
+        /// <summary>
+        /// Check a linked list for a specific value and its presence
+        /// </summary>
+        /// <param name="value">the value checking for</param>
+        /// <returns>True or false</returns>
         public bool Contains(int value)
         {
             try
@@ -68,6 +83,10 @@ namespace linked_list.classes
             return false;
 
         }
+        /// <summary>
+        /// adds a node to the end of a list
+        /// </summary>
+        /// <param name="value">The value of the node</param>
         public void Append(int value)
         {
             Node Append = new Node();
@@ -122,13 +141,14 @@ namespace linked_list.classes
 
             Node InsertBeforeThisValue = new Node();
             InsertBeforeThisValue.Value = insertBefore;
+            InsertValue.Next = InsertBeforeThisValue;
             Current = Head;
-            while (Current.Next.Value != insert)
+            while (Current.Next.Value != insertBefore)
             {
                 Current = Current.Next;
             }
-            InsertValue = Current.Next;
-            InsertValue = InsertBeforeThisValue;
+            Current = Current.Next;
+            Current.Next = InsertValue;
         }
 
     }
