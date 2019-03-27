@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Transactions;
@@ -13,23 +14,32 @@ namespace linked_list
             {
                 Console.WriteLine("Add First:");
                 LinkedList myList = new LinkedList();
-
+                List<int> list = new List<int>();
                 myList.Insert(1);
                 myList.Insert(5);
                 myList.Insert(22);
-                myList.Print();
+                list = myList.Print();
+                foreach (int value in list)
+                {
+                    Console.Write($"{value}, ");
+                }
                 Console.WriteLine("Does this list contain the number: ");
                 string ans = Console.ReadLine();
                 int ansInt = Convert.ToInt32(ans);
                 Console.WriteLine(myList.Contains(ansInt));
-                
+                Console.ReadLine();
+                Console.Clear();
                 Console.WriteLine("append an element");
                 int answer =   Convert.ToInt32(Console.ReadLine());
                 myList.Append(answer);
                 Console.WriteLine("--------------------------------------------------------------------");
                 Console.WriteLine("This is your newly made list: ");
-                myList.Print();
-                Console.WriteLine("--------------------------------------------------------------------");
+                list = myList.Print();
+                foreach (int value in list)
+                {
+                    Console.Write($"{value}, ");
+                }
+               
                 Console.ReadLine();
              
              
