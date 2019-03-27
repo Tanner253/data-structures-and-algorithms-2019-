@@ -101,20 +101,11 @@ namespace linked_list.classes
           
             
         }
-        /*public void InsertBeforeValue(int insertBefore, int insert)
-        {
-            Node theNode = new Node();
-            Node insertBeforeNode = new Node();
-            insertBeforeNode.Value = insertBefore;
-            theNode.Value = insert;
-            Current = Head;
-            while (Current.Next != insertBeforeNode)
-            {
-                Current = Current.Next;
-            }
-            Current.Next = theNode;
-            theNode.Next = insertBeforeNode;
-        }*/
+       /// <summary>
+       /// inserts after a chosen value
+       /// </summary>
+       /// <param name="insertAfter">value to insert after</param>
+       /// <param name="insert">inert value</param>
 
 
         public void InsertAfterValue(int insertAfter, int insert)
@@ -132,7 +123,11 @@ namespace linked_list.classes
             InsertValue = Current.Next;
             InsertAfterThisValue.Next = InsertValue;
         }
-
+        /// <summary>
+        /// inserts a value before another value
+        /// </summary>
+        /// <param name="insertBefore">value to assign before</param>
+        /// <param name="insert">value to assign</param>
         //refactored insert before
         public void InsertBeforeValue(int insertBefore, int insert)
         {
