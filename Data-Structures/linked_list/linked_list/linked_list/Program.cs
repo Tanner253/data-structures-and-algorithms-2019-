@@ -14,9 +14,9 @@ namespace linked_list
                 Console.WriteLine("Add First:");
                 LinkedList myList = new LinkedList();
 
-                myList.AddFirst(1);
-                myList.AddFirst(5);
-                myList.AddFirst(22);
+                myList.InsertBefore(1);
+                myList.InsertBefore(5);
+                myList.InsertBefore(22);
                 myList.PrintAllNode();
                 Console.WriteLine("Does this list contain the number: ");
                 string ans = Console.ReadLine();
@@ -42,6 +42,7 @@ namespace linked_list
                 Console.WriteLine("--------------------------------------------------------------------");
                 myList.PrintAllNode();
                 Console.WriteLine("--------------------------------------------------------------------");
+                Console.ReadKey();
                 
 
 
