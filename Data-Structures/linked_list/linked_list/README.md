@@ -51,7 +51,7 @@ If the value is found True is returned, if not then False is returned.
 ##### Print Method
 
 The print method will write all of the values of each node in the linked list to the console.*
-![Image 1](/assets/print)
+![Prints to console](/assets/print.JPG)
 
 ------------------------------
 
