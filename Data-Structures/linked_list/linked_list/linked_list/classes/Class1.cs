@@ -168,8 +168,26 @@ namespace linked_list.classes
             }
             return Current.Value;
         }
-     
-            
+        public void MergeTwoLinkedLists(LinkedList first, LinkedList second)
+        {
+            Node LL1 = new Node();
+            Node LL2 = new Node();
+            Node LL1_Next = new Node();
+            Node LL2_Next = new Node();
+            Current = Head;
+            while (LL1 != null && LL2 != null)
+            {
+                LL1_Next = LL1.Next;
+                LL2_Next = LL2.Next;
+                LL2.Next = LL1_Next;
+                LL1.Next = LL2;
+                LL1 = LL1_Next;
+                LL2 = LL2.Next;
+
+
+            }
+
+
         }
 
 
