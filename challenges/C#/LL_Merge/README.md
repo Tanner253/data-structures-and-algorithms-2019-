@@ -8,4 +8,4 @@ Merge two linked lists
 O(1)
 O(n)
 ## Solution
-![whiteboard solution](/assets.whiteboard.JPG)
+![whiteboard solution](/assets/whiteboard.PNG)
