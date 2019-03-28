@@ -97,5 +97,27 @@ namespace XUnitTestLinkedLists
             int output = LL.GetKthFromEnd(K);
             Assert.Equal(3, output);
         }
+
+      // [Fact]
+       public void CanMErgeTwoLinkedLists()
+        {
+            //setup
+            LinkedList LL = new LinkedList();
+            LL.Insert(1);
+            LL.Append(3);
+            LL.Append(4);
+            LL.Append(5);
+            LinkedList LL2 = new LinkedList();
+            LL2.Insert(1);
+            LL2.Append(3);
+            LL2.Append(4);
+            LL2.Append(5);
+            
+
+            //act
+            LL.MergeTwoLinkedLists(LL, LL2);
+            var output = LL.Print();
+           // Assert.Equals(output, );
+        }
     }
 }

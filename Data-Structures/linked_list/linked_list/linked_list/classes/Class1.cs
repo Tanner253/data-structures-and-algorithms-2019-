@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
@@ -30,7 +31,7 @@ namespace linked_list.classes
             }
         }
         /// <summary>
-        /// Prints all the values of each node in the linked list
+        /// Prints all the values of each node in the linked list - jason showed me list<int>
         /// </summary>
         public List<int> Print()
         {
@@ -142,9 +143,14 @@ namespace linked_list.classes
             {
                 Current = Current.Next;
             }
-            Current = Current.Next;
+            
             Current.Next = InsertValue;
         }
+        /// <summary>
+        /// get the value "Kth " from the end of the list
+        /// </summary>
+        /// <param name="K">will define what node we land on </param>
+        /// <returns>returns the value of the current node</returns>
         public int GetKthFromEnd(int K)
         {
            
@@ -162,6 +168,10 @@ namespace linked_list.classes
             }
             return Current.Value;
         }
+     
+            
+        }
+
 
     }
 }
