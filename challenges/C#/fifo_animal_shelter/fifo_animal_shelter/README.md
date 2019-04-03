@@ -8,4 +8,4 @@ First in first out animal shelter
 the approach we took was going throught the queue anre popping off the preference value, but only the first one and returning new queue O(n)
 
 ## Solution
-![whiteboard solution](assets/capture1.JPG)
+![whiteboard solution](assets/capture1.PNG)
