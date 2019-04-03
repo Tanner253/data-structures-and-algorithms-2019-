@@ -9,4 +9,4 @@ create a queue using two stacks
 the approach we took is flipping the stack upside down then dequeing those values then if the second stack was empty re flip stack and repeat
 
 ## Solution
-![whiteboarding](../../assets/capture1.PNG)
+![whiteboarding](assets/capture1.PNG)
