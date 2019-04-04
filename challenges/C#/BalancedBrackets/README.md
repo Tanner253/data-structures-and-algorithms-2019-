@@ -6,4 +6,4 @@ Multy bracket validation
 ## Approach & Efficiency
 the approach we took was sotring any backwards facing bracket into a queue then calling the opening brackets from a stack
 ## Solution
-![whiteboarding](assets/capture1.JPG)
+![whiteboarding](assets/capture1.PNG)
