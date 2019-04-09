@@ -7,4 +7,4 @@ Create a method that takes in a tree and converts the values into the fizbuzz eq
 O(H) time
 O(n ) space
 ## Solution
-![whiteboard solution](/assets/capture.PNG)
+![whiteboard solution](assets/capture.PNG)
