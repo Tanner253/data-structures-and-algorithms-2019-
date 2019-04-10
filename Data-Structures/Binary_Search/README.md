@@ -12,4 +12,4 @@ in order - in order binary search method
 Post order - post order binary search
 
 
-![whiteboarding of challenge 4/9](/assets/capture.JPG)
+![whiteboarding of challenge 4/9](assets/capture.JPG)
