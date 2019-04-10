@@ -9,3 +9,4 @@ the approach i took was a while loop that iterates until a condition is met, and
 
 ## Solution
 ![White Board Solution](../assets/array-binary-search.PNG)
+![White Board Solution](assets/capture.jpg)
