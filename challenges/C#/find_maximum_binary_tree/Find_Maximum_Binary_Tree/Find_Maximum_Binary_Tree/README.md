@@ -7,4 +7,4 @@ Return the largest value in a binary tree
 O(1) space
 O(n) time
 ## Solution
-![Whiteboad solution](assetS/capture.png)
+![Whiteboad solution](assetS/capture.JPG)
