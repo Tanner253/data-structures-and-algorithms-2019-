@@ -18,7 +18,11 @@ namespace BinarySearch.classes
         {
 
         }
-
+        /// <summary>
+        /// searches a tree in pre order
+        /// </summary>
+        /// <param name="Root">tree</param>
+        /// <returns>node values in list</returns>
         public List<int> RecursiveBinarySearchPre(Node Root)
         {
             if (Root != null)
@@ -37,7 +41,11 @@ namespace BinarySearch.classes
 
         }
 
-
+        /// <summary>
+        /// searches a tree in order
+        /// </summary>
+        /// <param name="Root">tree</param>
+        /// <returns>node values in list</returns>
         public List<int> RecursiveBinarySearchInOrder(Node Root)
         {
             if (Root != null)
@@ -56,7 +64,11 @@ namespace BinarySearch.classes
 
         }
 
-
+        /// <summary>
+        /// traverses a tree in post order
+        /// </summary>
+        /// <param name="Root">tree</param>
+        /// <returns>node values in list</returns>
         public List<int> RecursiveBinarySearchPostOrder(Node Root)
         {
             if (Root != null)
