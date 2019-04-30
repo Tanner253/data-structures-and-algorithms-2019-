@@ -5,4 +5,4 @@ the problem domain was "given a long string, return the first WORD that is repea
 ## Approach & Efficiency
 The approach was O(2n) O(2n) = = O(n)
 ## Solution
-![this is whiteboard solution](/assets/whiteboard.jpg)
+![this is whiteboard solution](assets/whiteboard.jpg)
